@@ -29,4 +29,6 @@ I developed an AI system that runs on the NVIDIA Jetson Nano to analyze blood sm
 8. Run the model using imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/(cancerous / non_cancerous)/(image name).jpg (output image name).jpg IMAGE_NAME with the name of your image and IMAGE_OUTPUT_NAME with the name of what you want the output image to be.
 9. Clcik on the output image to see the result!
 
-[View a video explanation here](video link)
+(video link)
+z
+(https://www.youtube.com/watch?v=rvYWbHV3xus)
