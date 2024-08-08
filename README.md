@@ -13,15 +13,20 @@ I developed an AI system that runs on the NVIDIA Jetson Nano to analyze blood sm
 ![cancerous3](https://github.com/user-attachments/assets/e47b3362-276d-4474-9362-bcca4fdaa8c8)
 ![cancerous2](https://github.com/user-attachments/assets/756d12da-b788-4bff-b778-6a6371c6f814)
 ![cancerous1](https://github.com/user-attachments/assets/dd11dcae-268c-4eb7-857d-9fdef6047386)
+
 ![cancerous](https://github.com/user-attachments/assets/cdaba2e6-b4b4-4263-adb0-6729cd89f2d4)
 
 
 
 
 ## Running this project
-
-1. Add steps for running this project.
-   
-3. Make sure to include any required libraries that need to be installed for your project to run.
+ 1. Setup your Jetson Nano and Install VScode
+2. Connect Jetson Nano onto your computer hotspot. Write down your Jetson Nano IP address for later use
+3. Connect your VScode to your Jetson Nano using Connect Host and ssh nvidia@IPAddress
+4. Open the NVIDIA home folder
+5. Open the terminal and use cd jetson-inference/python/training/classification to enter the needed directory
+6. Use NET=models/ai_final and DATASET=data/ai_final to set NET and DATASET for later reference
+8. Run the model using imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/(cancerous / non_cancerous)/(image name).jpg (output image name).jpg IMAGE_NAME with the name of your image and IMAGE_OUTPUT_NAME with the name of what you want the output image to be.
+9. Clcik on the output image to see the result!
 
 [View a video explanation here](video link)
